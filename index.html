@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Europe Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Europe Weather</h1>
+        <div class="controls">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search city..."
+            aria-label="Search cities"
+          />
+          <button id="unitToggle" aria-pressed="false">Show °F</button>
+          <button id="refreshBtn" title="Refresh data">Refresh</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="cities" class="grid">
+          <!-- City cards will be injected here by app.js -->
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small
+          >Demo: temperatures in °C (toggle for °F). Times New Roman, white
+          text.</small
+        >
+      </footer>
+    </div>
+
+    <link rel="stylesheet" href="index.css" />
+    ...
+    <script src="index.js"></script>
+  </body>
+</html>
